@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Edem - Mes Histoires",
+    "slug": "edem",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "edem",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#FF8C42",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.edem.stories",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Edem a besoin de la caméra pour te prendre en photo et créer ton personnage dans l'histoire !",
+        "NSPhotoLibraryUsageDescription": "Edem a besoin d'accéder à tes photos pour créer ton personnage dans l'histoire !"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FF8C42"
+      },
+      "package": "com.edem.stories",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      "expo-image-picker",
+      "expo-asset",
+      "expo-audio"
+    ]
+  }
+}

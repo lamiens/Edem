@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #FF8C42;
+  --color-secondary: #6B4CE6;
+  --color-accent: #FF6B9D;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-sun: #FFD93D;
+  --color-bg: #FFF8F0;
+  --color-surface: #FFFFFF;
+  --color-text: #2D1B0E;
+  --color-text-secondary: #8B6F47;
+  --color-text-muted: #C4A882;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+.gradient-sunset { background: linear-gradient(135deg, #FF8C42, #FF6B9D); }
+.gradient-golden { background: linear-gradient(135deg, #FFD93D, #FF8C42); }
+.gradient-ocean { background: linear-gradient(135deg, #6EC6FF, #6B4CE6); }
+.gradient-forest { background: linear-gradient(135deg, #4ADE80, #10B981); }
+.gradient-night { background: linear-gradient(135deg, #6B4CE6, #2D1B0E); }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(255,140,66,0.3); }
+  50% { box-shadow: 0 0 20px rgba(255,140,66,0.6); }
+}
+
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }

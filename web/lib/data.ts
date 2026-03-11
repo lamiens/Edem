@@ -1,0 +1,106 @@
+import { Region, StoryQuestion } from './types';
+
+export const regions: Region[] = [
+  { id: 'caribbean', name: 'Caraïbes', emoji: '🏝️', description: 'Guadeloupe, Martinique, Haïti, Jamaïque...', color: '#00BCD4' },
+  { id: 'west-africa', name: "Afrique de l'Ouest", emoji: '🌍', description: "Sénégal, Mali, Ghana, Nigeria, Côte d'Ivoire...", color: '#FF8C42' },
+  { id: 'central-africa', name: 'Afrique Centrale', emoji: '🌿', description: 'Cameroun, Congo, Gabon, RDC...', color: '#4ADE80' },
+  { id: 'east-africa', name: "Afrique de l'Est", emoji: '🦁', description: 'Éthiopie, Kenya, Tanzanie, Madagascar...', color: '#F59E0B' },
+  { id: 'usa', name: 'États-Unis', emoji: '🗽', description: 'Harlem, Atlanta, Nouvelle-Orléans...', color: '#6B4CE6' },
+  { id: 'europe', name: 'Europe', emoji: '🏰', description: 'France, Royaume-Uni, Belgique, Portugal...', color: '#FF6B9D' },
+  { id: 'indian-ocean', name: 'Océan Indien', emoji: '🌊', description: 'La Réunion, Maurice, Comores, Mayotte...', color: '#10B981' },
+  { id: 'brazil', name: 'Brésil', emoji: '🎭', description: 'Salvador de Bahia, Rio, São Paulo...', color: '#FFD93D' },
+];
+
+export const storyQuestions: StoryQuestion[] = [
+  {
+    id: 'heroName',
+    question: 'Comment s\'appelle ton héros ? ✨',
+    subtitle: 'Donne-lui un prénom magique !',
+    choices: [],
+    type: 'text',
+  },
+  {
+    id: 'heroTrait',
+    question: 'Quel est le super pouvoir de ton héros ? 💪',
+    subtitle: 'Choisis ce qui le rend spécial',
+    choices: [
+      { id: 'brave', label: 'Très courageux', emoji: '🦁', value: 'le courage' },
+      { id: 'smart', label: 'Super intelligent', emoji: '🧠', value: "l'intelligence" },
+      { id: 'kind', label: 'Un grand cœur', emoji: '💖', value: 'la gentillesse' },
+      { id: 'creative', label: 'Ultra créatif', emoji: '🎨', value: 'la créativité' },
+      { id: 'funny', label: 'Trop drôle', emoji: '😂', value: "l'humour" },
+      { id: 'fast', label: "Rapide comme l'éclair", emoji: '⚡', value: 'la rapidité' },
+    ],
+    type: 'single',
+  },
+  {
+    id: 'setting',
+    question: "Où se passe l'aventure ? 🗺️",
+    subtitle: 'Choisis le décor de ton histoire',
+    choices: [
+      { id: 'forest', label: 'Forêt enchantée', emoji: '🌳', value: 'une forêt enchantée avec des arbres géants et des lucioles magiques' },
+      { id: 'ocean', label: "Fond de l'océan", emoji: '🐠', value: "le fond de l'océan avec des coraux lumineux et des poissons parlants" },
+      { id: 'city', label: 'Ville futuriste', emoji: '🏙️', value: 'une ville futuriste avec des bâtiments qui touchent les nuages' },
+      { id: 'sky', label: 'Royaume des nuages', emoji: '☁️', value: 'un magnifique royaume flottant dans les nuages' },
+      { id: 'village', label: 'Village ancestral', emoji: '🏘️', value: 'un village ancestral rempli de traditions et de sagesse' },
+      { id: 'space', label: "L'espace", emoji: '🚀', value: "l'espace infini avec des planètes colorées et des étoiles dansantes" },
+    ],
+    type: 'single',
+  },
+  {
+    id: 'companion',
+    question: 'Qui accompagne ton héros ? 🤝',
+    subtitle: 'Choisis un compagnon fidèle',
+    choices: [
+      { id: 'cat', label: 'Un chat magique', emoji: '🐱', value: 'un chat magique aux yeux dorés qui parle et donne des conseils' },
+      { id: 'bird', label: 'Un oiseau parlant', emoji: '🦜', value: 'un magnifique oiseau parlant aux plumes arc-en-ciel' },
+      { id: 'dragon', label: 'Un petit dragon', emoji: '🐲', value: 'un adorable petit dragon qui crache des étincelles colorées' },
+      { id: 'friend', label: 'Un meilleur ami', emoji: '👫', value: "son meilleur ami, toujours prêt pour l'aventure" },
+      { id: 'elder', label: 'Un sage ancien', emoji: '👴🏿', value: 'un sage ancien qui connaît tous les secrets du monde' },
+      { id: 'spirit', label: 'Un esprit guide', emoji: '✨', value: 'un esprit lumineux et bienveillant qui le guide' },
+    ],
+    type: 'single',
+  },
+  {
+    id: 'challenge',
+    question: 'Quel défi ton héros doit relever ? 🎯',
+    subtitle: "Choisis l'épreuve à surmonter",
+    choices: [
+      { id: 'treasure', label: 'Trouver un trésor', emoji: '💎', value: 'retrouver un trésor ancien caché depuis des siècles' },
+      { id: 'save', label: "Sauver quelqu'un", emoji: '🦸🏿', value: 'sauver une personne très importante emprisonnée par un sort' },
+      { id: 'mystery', label: 'Résoudre un mystère', emoji: '🔍', value: 'résoudre un mystère qui intrigue tout le monde depuis longtemps' },
+      { id: 'darkness', label: "Vaincre l'ombre", emoji: '🌑', value: 'affronter une ombre maléfique qui menace son monde' },
+      { id: 'harmony', label: 'Ramener la paix', emoji: '🕊️', value: "ramener l'harmonie entre deux peuples en conflit" },
+      { id: 'dream', label: 'Réaliser un rêve', emoji: '🌟', value: 'réaliser son rêve le plus fou contre toute attente' },
+    ],
+    type: 'single',
+  },
+  {
+    id: 'power',
+    question: "Quel objet magique l'aide ? 🪄",
+    subtitle: 'Choisis un artefact puissant',
+    choices: [
+      { id: 'amulet', label: 'Un collier ancestral', emoji: '📿', value: 'un collier ancestral transmis de génération en génération, qui brille dans le noir' },
+      { id: 'drum', label: 'Un tambour sacré', emoji: '🥁', value: 'un tambour sacré dont le rythme peut changer la réalité' },
+      { id: 'book', label: 'Un livre magique', emoji: '📖', value: "un livre magique dont les pages écrivent l'avenir" },
+      { id: 'staff', label: 'Un bâton de lumière', emoji: '🔮', value: 'un bâton de lumière qui repousse toute obscurité' },
+      { id: 'mask', label: 'Un masque de pouvoir', emoji: '🎭', value: 'un masque ancien qui donne des pouvoirs extraordinaires à celui qui le porte' },
+      { id: 'stone', label: 'Une pierre enchantée', emoji: '💠', value: 'une pierre enchantée qui vibre et chante quand le danger approche' },
+    ],
+    type: 'single',
+  },
+  {
+    id: 'moral',
+    question: 'Quelle leçon ton histoire enseigne ? 📚',
+    subtitle: 'Choisis le message de ton histoire',
+    choices: [
+      { id: 'believe', label: 'Croire en soi', emoji: '💫', value: 'Il faut toujours croire en soi, même quand les autres doutent' },
+      { id: 'together', label: "L'union fait la force", emoji: '🤝', value: 'Ensemble, on est plus forts que seuls' },
+      { id: 'difference', label: 'La différence est belle', emoji: '🌈', value: 'Nos différences sont notre plus grande force' },
+      { id: 'roots', label: 'Connaître ses racines', emoji: '🌳', value: 'Connaître ses racines nous donne des ailes pour voler' },
+      { id: 'courage', label: 'Le courage vient du cœur', emoji: '❤️‍🔥', value: 'Le vrai courage vient du cœur, pas des muscles' },
+      { id: 'dream', label: 'Les rêves se réalisent', emoji: '⭐', value: 'Tous les rêves peuvent devenir réalité si on y croit vraiment' },
+    ],
+    type: 'single',
+  },
+];
